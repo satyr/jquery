@@ -1,5 +1,5 @@
 // exclude the following css properties to add px
-var rexclude = /z-?index|font-?weight|opacity|zoom|line-?height/i,
+var rexclude = /^(?:z-?index|font-?weight|opacity|zoom|line-?height)$/i,
 	ralpha = /alpha\([^)]*\)/,
 	ropacity = /opacity=([^)]*)/,
 	rfloat = /float/i,

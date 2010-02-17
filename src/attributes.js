@@ -1,11 +1,11 @@
 var rclass = /[\n\t]/g,
 	rspace = /\s+/,
 	rreturn = /\r/g,
-	rspecialurl = /href|src|style/,
-	rtype = /(button|input)/i,
-	rfocusable = /(button|input|object|select|textarea)/i,
+	rspecialurl = /^(?:href|src|style)$/,
+	rtype = /^(button|input)$/i,
+	rfocusable = /^(button|input|object|select|textarea)$/i,
 	rclickable = /^(a|area)$/i,
-	rradiocheck = /radio|checkbox/;
+	rradiocheck = /^(?:radio|checkbox)$/;
 
 jQuery.fn.extend({
 	attr: function( name, value ) {

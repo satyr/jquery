@@ -1,5 +1,5 @@
 var elemdisplay = {},
-	rfxtypes = /toggle|show|hide/,
+	rfxtypes = /^(?:toggle|show|hide)$/,
 	rfxnum = /^([+-]=)?([\d+-.]+)(.*)$/,
 	timerId,
 	fxAttrs = [

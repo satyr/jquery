@@ -21,13 +21,13 @@ var jQuery = function( selector, context ) {
 	quickExpr = /^[^<]*(<[\w\W]+>)[^>]*$|^#([\w-]+)$/,
 
 	// Is it a simple selector
-	isSimple = /^.[^:#\[\.,]*$/,
+	isSimple = /^.[^:#\[.,]*$/,
 
 	// Check if a string has a non-whitespace character in it
 	rnotwhite = /\S/,
 
 	// Used for trimming whitespace
-	rtrim = /^(\s|\u00A0)+|(\s|\u00A0)+$/g,
+	rtrim = /^[\s\u00A0]+|[\s\u00A0]+$/g,
 
 	// Match a standalone tag
 	rsingleTag = /^<(\w+)\s*\/?>(?:<\/\1>)?$/,

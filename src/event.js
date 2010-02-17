@@ -687,7 +687,7 @@ if ( !jQuery.support.submitBubbles ) {
 // change delegation, happens here so we have bind.
 if ( !jQuery.support.changeBubbles ) {
 
-	var formElems = /textarea|input|select/i,
+	var formElems = /^(?:textarea|input|select)$/i,
 
 	changeFilters,
 
